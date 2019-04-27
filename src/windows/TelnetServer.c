@@ -2,15 +2,6 @@
 // Date: April 27, 2019
 // Made for SOU Hackathon 2019
 
-// "c version of telnet server"
-// started out as a rough translation of the c++ base
-
-// this is a basic message server
-// users can connect to it and leave a message, which is saved onto the disk
-
-// tested with mingw-w64
-
-
 #include "server.h"
 
 #ifndef STDIO_H
