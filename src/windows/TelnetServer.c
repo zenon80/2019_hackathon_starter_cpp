@@ -2,6 +2,9 @@
 // Date: April 27, 2019
 // Made for SOU Hackathon 2019
 
+
+// program has not been completely optimized due to time constraints
+
 #include "server.h"
 
 #ifndef STDIO_H

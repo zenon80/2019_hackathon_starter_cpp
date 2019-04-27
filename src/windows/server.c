@@ -183,9 +183,11 @@ void client_handleconnect(Client *client) {
 		
 		client_sendmessage(client, "Last message:\r\n");
 		client_sendmessage(client, newstring);
-		client_sendmessage(client, "\r\nLeave a new message (disconnect when done):\r\n");
+		
 		free(f.data);
 	}
+	
+	client_sendmessage(client, "\r\nLeave a new message (disconnect when done):\r\n");
 }
 
 void client_sendmessage(Client *client, const char *msgbuffer) {
