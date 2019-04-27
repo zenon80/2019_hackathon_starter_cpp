@@ -3,7 +3,10 @@
 // Made for SOU Hackathon 2019
 
 
-// program has not been completely optimized due to time constraints
+// now with MULTITHREADING!!!
+
+// written in C because it's better
+// also, C is still valid C++
 
 #include "server.h"
 
@@ -24,6 +27,8 @@
 
 
 int main(int argc, char **argv) {
+	
+	// not optimized due to time constraints
 	
 	int maxconnections = 10;
 	

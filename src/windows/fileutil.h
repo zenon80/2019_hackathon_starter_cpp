@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #endif
 
-#define FILE_BUFFER_SIZE 65536*16
+#define FILE_BUFFER_SIZE 65536*16 // 1 mb
 #define ERROR_FILE_OPEN -2
 #define ERROR_FILE_READ -3
 #define ERROR_FILE_WRITE -4

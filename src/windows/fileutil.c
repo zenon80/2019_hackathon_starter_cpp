@@ -9,12 +9,13 @@ int ReadFileData(FileData *f, const char *filename, const char *mode) {
 	FILE *inputfile = fopen(filename, mode);
 	if (!inputfile) return ERROR_FILE_OPEN;
 	
-	// hack to detect seek_end support
+	// hack to detect seek_end support, which would allow for just a single allocation
 	// shouldn't use with nonbinary files
 	if (mode[1] == 'b') {
 		// file is binary
 		if (!fseek(inputfile, 0, SEEK_END)) {
-			// fseek succeeded?
+			// fseek might have succeeded at this point
+			// let's see what it says the filesize is now
 			long filesize = ftell(inputfile);
 			rewind(inputfile);
 			if (filesize > 0) {
