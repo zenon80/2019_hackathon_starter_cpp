@@ -4,6 +4,6 @@ A  multi-threaded message server where users can leave messages for future users
 
 
 ## Authors
-Denis Roman - Conversion to C, file I/O library, restructuring, and server programming
+Denis Roman - conversion to C, file I/O library, restructuring, and server programming
 
 Elijah Anderson-Justis - Initial C++ base for telnet sockets
